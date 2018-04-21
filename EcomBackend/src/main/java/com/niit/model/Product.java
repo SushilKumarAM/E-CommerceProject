@@ -13,14 +13,13 @@ import org.springframework.web.multipart.MultipartFile;
 public class Product {
 	@Id
 	@GeneratedValue
-	
-	
-	
 	int productId;
+	
 	String productName;
 	String productDesc;
-	int categoryId;
+	int categoryId;	
 	int supplierId;
+	
 	int price;
 	int stock;
 	
@@ -51,18 +50,6 @@ public class Product {
 	public void setProductDesc(String productDesc) {
 		this.productDesc = productDesc;
 	}
-	public int getCategoryId() {
-		return categoryId;
-	}
-	public void setCategoryId(int categoryId) {
-		this.categoryId = categoryId;
-	}
-	public int getSupplierId() {
-		return supplierId;
-	}
-	public void setSupplierId(int supplierId) {
-		this.supplierId = supplierId;
-	}
 	public int getPrice() {
 		return price;
 	}
@@ -74,6 +61,18 @@ public class Product {
 	}
 	public void setStock(int stock) {
 		this.stock = stock;
+	}
+	public int getCategoryId() {
+		return categoryId;
+	}
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
+	}
+	public int getSupplierId() {
+		return supplierId;
+	}
+	public void setSupplierId(int supplierId) {
+		this.supplierId = supplierId;
 	}
 	
 

@@ -49,6 +49,8 @@ public class LoginController {
 				page="AdminHome";
 				session.setAttribute("loggedIn",loggedIn);
 				session.setAttribute("username",username);
+				List<Product> listProducts =productDAO.getProducts(); 
+				m.addAttribute("listProducts",listProducts);
 			}
 			else
 			{
@@ -70,6 +72,14 @@ public class LoginController {
 		List<Product> listProducts =productDAO.getProducts(); 
 		m.addAttribute("listProducts",listProducts);
 		return "UserHome";
+	}
+
+	@RequestMapping(value="/AdminHome")
+	public String showAdminHome(Model m)
+	{
+		List<Product> listProducts =productDAO.getProducts(); 
+		m.addAttribute("listProducts",listProducts);
+		return "AdminHome";
 	}
 
 

@@ -108,10 +108,6 @@ public class ProductController {
 		
 		m.addAttribute("supplierList",this.getSuppliers());
 		
-		
-		
-
-		
 		return "UpdateProduct";
 	}
 	

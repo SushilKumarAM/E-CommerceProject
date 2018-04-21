@@ -1,12 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="Header.jsp" %>
+<br><br><br><br>
 
 <div class="container">
 
 <table class ="table">
 	<tr>
 		<td rowspan="">
-			<img src="<c:url value="/resources/images/${product.productId}.jpg"/>" />
+			<img src="<c:url value="H:/Ecomerce Project/EcomFrontend/src/main/webapp/WEB-INF/resources/product/${product.productId}.jpeg"/>" />
 		</td>
 	
 	</tr>
@@ -51,6 +52,10 @@
 		</td>
 	</tr>
     </form>
+    <tr>
+		<td>Product Description</td>
+		<td>${product.productDesc}</td>
+	</tr>
 </table>
 
 </div>

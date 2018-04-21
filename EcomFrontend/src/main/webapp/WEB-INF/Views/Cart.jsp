@@ -30,12 +30,12 @@
     </form>
     </tr>
 
-</c:forEach>
+
 	<tr>
 		<td colspan="4">Total Amount</td>
 		<td colspan="2">${totalAmount}</td>	
 	</tr>
-	
+</c:forEach>	
 	<tr>
 		<td colspan="4"><a href="<c:url value="/UserHome/"/>" class ="btn btn-danger btn-block">Continue Shopping</a></td>
 		<td colspan="2"><a href="<c:url value="/Checkout/"/>" class ="btn btn-danger btn-block">Check Out</a></td>
