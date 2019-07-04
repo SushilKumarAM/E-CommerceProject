@@ -43,7 +43,7 @@ public class LoginController {
 		
 			session.setAttribute("role",role.getAuthority());
 			
-			if(role.getAuthority().equals("Role_Enabled"))
+			if(role.getAuthority().equals("Admin"))
 			{
 				loggedIn=true;
 				page="AdminHome";

@@ -31,8 +31,8 @@ public class CartController
 		
 		List<Cart> listCartItems=cartDAO.listCartItems(username);
 		m.addAttribute("cartItems",listCartItems);
-		m.addAttribute("totalAmount",this.calcTotalAmount(listCartItems));
-		m.addAttribute("cartsize",listCartItems.size());
+		//m.addAttribute("totalAmount",this.calcTotalAmount(listCartItems));
+		//m.addAttribute("cartsize",listCartItems.size());
 		return "Cart";
 	}
 	
@@ -54,8 +54,8 @@ public class CartController
 		
 		List<Cart> listCartItems=cartDAO.listCartItems(username);
 		m.addAttribute("cartItems",listCartItems);
-		m.addAttribute("totalAmount",this.calcTotalAmount(listCartItems));
-		m.addAttribute("cartsize",listCartItems.size());
+		//m.addAttribute("totalAmount",this.calcTotalAmount(listCartItems));
+		//m.addAttribute("cartsize",listCartItems.size());
 		return "Cart";
 	}
 	
@@ -70,7 +70,7 @@ public class CartController
 		
 		List<Cart> listCartItems=cartDAO.listCartItems(username);
 		m.addAttribute("cartItems",listCartItems);
-		m.addAttribute("totalAmount",this.calcTotalAmount(listCartItems));
+		//m.addAttribute("totalAmount",this.calcTotalAmount(listCartItems));
 		m.addAttribute("cartsize",listCartItems.size());
 		return "Cart";
 	}
@@ -85,13 +85,13 @@ public class CartController
 		
 		List<Cart> listCartItems=cartDAO.listCartItems(username);
 		m.addAttribute("cartItems",listCartItems);
-		m.addAttribute("totalAmount",this.calcTotalAmount(listCartItems));
+		//m.addAttribute("totalAmount",this.calcTotalAmount(listCartItems));
 		m.addAttribute("cartsize",listCartItems.size());
 		return "Cart";
 	}
 	
 	
-	 public int calcTotalAmount(List<Cart> cartItems)
+	/* public int calcTotalAmount(List<Cart> cartItems)
 	  {
 		int var=0,totalAmount=0;
 		while(var<cartItems.size())
@@ -102,7 +102,7 @@ public class CartController
 		}
 		return totalAmount;
 	}
-	
+	*/
 	
 	
 }

@@ -32,7 +32,7 @@ public class OrderController {
 		
 		List<Cart> listCartItems=cartDAO.listCartItems(username);
 		m.addAttribute("cartItems",listCartItems);
-		m.addAttribute("totalAmount",this.calcTotalAmount(listCartItems));
+		//m.addAttribute("totalAmount",this.calcTotalAmount(listCartItems));
 		return "OrderConfirm";
 	}
 	
@@ -46,7 +46,7 @@ public class OrderController {
 		List<Cart> listCartItems=cartDAO.listCartItems(username);
 		
 		orderDetail.setPmode(pmode);
-		orderDetail.setTotalShoppingAmount(this.calcTotalAmount(listCartItems));
+		//orderDetail.setTotalShoppingAmount(this.calcTotalAmount(listCartItems));
 		orderDetail.setUsername(username);
 		
 		orderDAO.paymentProcess(orderDetail);
@@ -54,7 +54,7 @@ public class OrderController {
 		return "ThankYou";
 	}
 	
-	 public int calcTotalAmount(List<Cart> cartItems)
+/*	 public int calcTotalAmount(List<Cart> cartItems)
 	  {
 		int var=0,totalAmount=0;
 		while(var<cartItems.size())
@@ -65,7 +65,7 @@ public class OrderController {
 		}
 		return totalAmount;
 	}
-	
+*/	
 	
 
 }

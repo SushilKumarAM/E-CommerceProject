@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Online Shopping</title>
-   
+
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Bootstrap core CSS -->
@@ -35,21 +35,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href=<c:url value="/"/>>Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href=<c:url value="/"/>Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=<c:url value="/login"/>>SignIn</a>
+                    <a class="nav-link" href=<c:url value="/login"/>SignIn</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=<c:url value="/product"/>>Product</a>
+                    <a class="nav-link" href=<c:url value="/product"/>Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=<c:url value="/category"/>>Category</a>
+                    <a class="nav-link" href=<c:url value="/category"/>Category</a>
                 </li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=<c:url value="/supplier"/>>Supplier</a>
-                </li>             
+                    <a class="nav-link" href=<c:url value="/supplier"/>Supplier</a>
+                </li>
+
             </ul>
             <ul class="navbar-nav nav-flex-icons">
                 <li class="nav-item">
@@ -70,9 +71,9 @@
 
 </header>
 <!--Main Navigation-->
-            
-    
- 
+
+
+
 
     <!-- SCRIPTS -->
 <!-- JQuery -->
@@ -85,7 +86,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
 
 
-            
+
 </body>
 
 </html>

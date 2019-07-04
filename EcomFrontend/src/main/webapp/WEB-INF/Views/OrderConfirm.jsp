@@ -43,8 +43,8 @@
 	</table>
 	</td></tr>
 	<tr>
-		<td colspan="4"><a href="<c:url value="/Cart/"/>" class ="btn btn-danger btn-block">Cart</a></td>
-		<td colspan="2"><input type="submit" value="/Payment" class ="btn btn-danger btn-block"/></td>
+		<td colspan="4"><a href="<c:url value="/cart"/>" class ="btn btn-danger btn-block">Cart</a></td>
+		<td colspan="2"><input type="submit" value="Payment" class ="btn btn-danger btn-block"/></td>
  	
 	</tr>
 	
